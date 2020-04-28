@@ -16,6 +16,7 @@ public:
 int sum(M m)
 {
 	int M::*px = &M::x;//pointer px to member x of class M which stores x address.
+			   //int *px=&x is wrong as only. class and member functions have access to member variables.
 	int M::*py = &M::y;//pointer py to member y of class M which stores y address.
 	M*pm = &m;         //pointer pm which stores address of object m of class M.
 	int s = m.*px + pm->*py;
