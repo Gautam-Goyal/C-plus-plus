@@ -20,14 +20,14 @@ class project
       }
     }
 
-    friend void modify(int,int,project);
+    friend void modify(int,int,project&);
 
 };
 
-void modify(int data,int index,project p)
+void modify(int data,int index,project& p)//need to mention object so that it can access and update vector values.
     {
       //vector<int>::iterator it=v1.begin();
-      //v1.insert(it+index,data); To insert element
+      //v1.insert(it+index,data); //To insert element
       p.v1[index]=data;//to replace element
     }
 
