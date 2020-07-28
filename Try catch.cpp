@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 double divisionby(int num1, int num2)
